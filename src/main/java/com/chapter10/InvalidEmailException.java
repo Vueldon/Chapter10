@@ -9,12 +9,10 @@ package com.chapter10;
  *
  * @author 0788763
  */
-public class Main 
+public class InvalidEmailException extends Exception
 {
-    public static void main(String[] args) 
+    public InvalidEmailException(String message)
     {
-        Tiger tony = new Tiger(5);
-        
-        System.out.println(tony.toString());
+        super(message);
     }
 }

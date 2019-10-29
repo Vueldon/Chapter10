@@ -9,12 +9,17 @@ package com.chapter10;
  *
  * @author 0788763
  */
-public class Main 
+public class Animal 
 {
-    public static void main(String[] args) 
+    private String speciesName;
+    
+    public Animal(String speciesName)
     {
-        Tiger tony = new Tiger(5);
-        
-        System.out.println(tony.toString());
+        this.speciesName = speciesName;
+    }
+    
+    public String getSpeciesName()
+    {
+        return this.speciesName;
     }
 }
